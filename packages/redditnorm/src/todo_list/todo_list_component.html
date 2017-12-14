@@ -56,15 +56,15 @@
     <material-list *ngIf="!items.isEmpty || running">
         <div *ngFor="let item of items; let i=index">
 
-        <material-list-item (trigger)="open(item)">
-
+            <a class="nohl" [href]="'https://www.reddit.com' + item.permalink">
+        <material-list-item>
             <img src="{{item.thumbnail_url}}" style="margin-right: 1em;" *ngIf="item.thumbnail_url.startsWith('http')">
             <!--<glyph icon="description_outline" *ngIf="item.thumbnail_url == 'self'"></glyph>-->
             <span class="post-title">{{item.title}}</span>
             <small class="post-domain"> ({{item.domain}})</small>
             <span class="post-date material-list-item-secondary"><small>{{item.num_comments}} c</small> | {{item.datestr()}}</span>
         </material-list-item>
-
+            </a>
             <img *ngIf="expand" class="expand" [src]="item.url" (load)="item.should_expand=true" [class.hidden]="!item.should_expand">
 
         </div>
