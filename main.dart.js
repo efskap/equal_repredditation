@@ -29121,7 +29121,7 @@ this.cx.appendChild(x)
 this.n(this.cy)
 x=new X.hc("https://crossorigin.herokuapp.com/https://www.reddit.com")
 this.dx=x
-x=new N.bL(x,[],"fffffffuuuuuuuuuuuu","120",!1,"8",!1)
+x=new N.bL(x,[],"","100",!1,"8",!1)
 this.dy=x
 o=this.db
 o.f=x
@@ -30145,7 +30145,7 @@ this.r=z
 this.e=z.e
 y=new X.hc("https://crossorigin.herokuapp.com/https://www.reddit.com")
 this.x=y
-y=new N.bL(y,[],"fffffffuuuuuuuuuuuu","120",!1,"8",!1)
+y=new N.bL(y,[],"","100",!1,"8",!1)
 this.y=y
 x=this.a.e
 z.f=y
@@ -30161,7 +30161,7 @@ this.r.t()},
 p:function(){this.r.q()},
 $asa:I.Q},
 VN:{"^":"b:200;",
-$1:[function(a){return new N.bL(a,[],"fffffffuuuuuuuuuuuu","120",!1,"8",!1)},null,null,2,0,null,0,"call"]}}],["","",,X,{"^":"",hc:{"^":"c;a",
+$1:[function(a){return new N.bL(a,[],"","100",!1,"8",!1)},null,null,2,0,null,0,"call"]}}],["","",,X,{"^":"",hc:{"^":"c;a",
 k7:function(a,b,c,d){var z=0,y=P.cV(),x,w=this,v,u,t
 var $async$k7=P.co(function(e,f){if(e===1)return P.db(f,y)
 while(true)switch(z){case 0:v=C.a7.av(b.gmp()/1000)
