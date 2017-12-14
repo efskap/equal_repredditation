@@ -1,0 +1,76 @@
+<!-- Components info: https://webdev.dartlang.org/components -->
+<div class="options">
+
+
+    <material-input label="{{subredditName.isEmpty ? '(all)' : 'Subreddit'}}"
+                    leadingText="/r/"
+                    [disabled]="running"
+                    [class.disabled]="running"
+                    autoFocus floatingLabel
+                    [(ngModel)]="subredditName"
+                    width="3"
+                    (keyup.enter)="start()">
+    </material-input>
+       <material-checkbox
+            [(ngModel)]="expand"
+            label="Expand images">
+    </material-checkbox>
+<br/>
+    <material-input [(ngModel)]="interval"
+                    width="1"
+                    maxwidth="4"
+                    type="number"
+                    [disabled]="running"
+                    (keyup.enter)="start()"
+                    floatingLabel
+                    label="Interval (days)"></material-input>
+    <material-input
+                    [(ngModel)]="limit"
+                    maxwidth="3"
+                    (keyup.enter)="start()"
+                    [disabled]="running"
+                    type="number"
+                    floatingLabel
+                    label="Posts per interval"></material-input>
+
+    <br/>
+    <material-button
+            raised
+            (trigger)="start()"
+            class="primary"
+             *ngIf="!running">
+        Start
+    </material-button>
+    <material-button
+            raised
+            (trigger)="running=false"
+            *ngIf="running">
+        Stop
+
+    </material-button>
+</div>
+    <hr noshade *ngIf="!items.isEmpty || running">
+<!--<p *ngIf="items.isEmpty">-->
+<!--</p>-->
+
+    <material-list *ngIf="!items.isEmpty || running">
+        <div *ngFor="let item of items; let i=index">
+
+        <material-list-item (trigger)="open(item)">
+
+            <img src="{{item.thumbnail_url}}" style="margin-right: 1em;" *ngIf="item.thumbnail_url.startsWith('http')">
+            <!--<glyph icon="description_outline" *ngIf="item.thumbnail_url == 'self'"></glyph>-->
+            <span class="post-title">{{item.title}}</span>
+            <small class="post-domain"> ({{item.domain}})</small>
+            <span class="post-date material-list-item-secondary"><small>{{item.num_comments}} c</small> | {{item.datestr()}}</span>
+        </material-list-item>
+
+            <img *ngIf="expand" class="expand" [src]="item.url" (load)="item.should_expand=true" [class.hidden]="!item.should_expand">
+
+        </div>
+        <material-list-item disabled  *ngIf="running" style="margin-top: 1em">
+            <material-progress [indeterminate]="true"  ></material-progress>
+</material-list-item>
+
+
+    </material-list>

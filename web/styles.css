@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Material+Icons);
+@import url(https://fonts.googleapis.com/css?family=IM+Fell+English);
+
+h1{
+    font-family: 'IM Fell English', serif;
+    font-size: 3em;
+}
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+    color: #223;
+  padding: 3vw;
+}
+
+* {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+span.leading-text{
+    opacity: 0.38;
+}

@@ -1,0 +1,57 @@
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  line-height: 3em;
+}
+
+li:hover {
+  background-color: #EEEEEE;
+}
+
+li material-checkbox {
+  vertical-align: middle;
+}
+
+li material-fab {
+  float: right;
+  vertical-align: middle;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.post-title{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-right: 1em;
+}
+.post-domain{
+    opacity: 0.7;
+}
+span.post-date{
+    padding-left: 1em;
+}
+.options{
+    background-color: #fafafa;
+    padding:1em;
+    display: inline-block;
+}
+hr{
+    border-color: #eee;
+    margin-top: 2em;
+}
+material-button.primary{
+    background-color: #4285f4;
+    color: #fff;
+}
+.hidden{
+    display:none;
+}
+img.expand{
+    max-width: 100%;
+    border-radius: 3px;
+}
