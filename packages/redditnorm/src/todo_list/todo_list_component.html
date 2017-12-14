@@ -56,7 +56,7 @@
     <material-list *ngIf="!items.isEmpty || running">
         <div *ngFor="let item of items; let i=index">
 
-            <a class="nohl" [href]="'https://www.reddit.com' + item.permalink">
+            <a class="nohl" target="_blank" [href]="'https://www.reddit.com' + item.permalink">
         <material-list-item>
             <img src="{{item.thumbnail_url}}" style="margin-right: 1em;" *ngIf="item.thumbnail_url.startsWith('http')">
             <!--<glyph icon="description_outline" *ngIf="item.thumbnail_url == 'self'"></glyph>-->
