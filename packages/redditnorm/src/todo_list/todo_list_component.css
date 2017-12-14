@@ -24,9 +24,19 @@ li material-fab {
   text-decoration: line-through;
 }
 
+/* emergency mobile fix */
+@media screen and(max-width: 800px){
+    material-list-item {
+        overflow-x: auto;
+    }
+}
+@media screen and(min-width: 800px){
+   .post-title {
+       overflow: hidden;
+   }
+}
 .post-title{
     text-overflow: ellipsis;
-    overflow: hidden;
     padding-right: 1em;
 }
 .post-domain{
