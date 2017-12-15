@@ -2,6 +2,8 @@
 <p>You've probably noticed how the <strong>top</strong> tab on active subreddits is heavily skewed towards recent posts due to reddit's exponential growth.
 <br>Hardly any of the "top posts of all time" are even a year old.
 <p>This tool displays the best content from a subreddit's entire history by dividing it into intervals and getting a few top posts from each one.</p>
+<p>Interesting old subreds to try:
+    <span *ngFor="let subred of ['minecraft','hearthstone', 'pics', 'wow', 'programming']; let isLast=last"> <a href="javascript:;" (click)="app.setAndStart(subred)">r/{{subred}}</a>{{isLast ? '' : ', '}}</span></p>
 <small>Queries for cold ancient data might take a few attempts to go through, but we'll keep automatically retrying.</small>
 <p>
-<todo-list></todo-list>
+<post-list #app></post-list>
