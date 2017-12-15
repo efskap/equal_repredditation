@@ -19,3 +19,7 @@ body {
 span.leading-text{
     opacity: 0.38;
 }
+a {
+    color: #4285f4;
+    text-decoration: none;
+}

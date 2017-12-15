@@ -6,7 +6,7 @@
                     leadingText="/r/"
                     [disabled]="running"
                     [class.disabled]="running"
-                    autoFocus floatingLabel
+                    floatingLabel
                     [(ngModel)]="subredditName"
                     width="3"
                     (keyup.enter)="start()">
