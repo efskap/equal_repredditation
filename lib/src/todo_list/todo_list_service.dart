@@ -8,7 +8,7 @@ import 'package:http/browser_client.dart';
 
 @Injectable()
 class RedditService {
- String base = "https://cors-anywhere.herokuapp.com/https://www.reddit.com";
+ String base = "https://www.reddit.com";
   Future<List<Post>> getPosts(String subred, DateTime start, DateTime end, int n) async {
     int from = (start.millisecondsSinceEpoch / 1000).round();
     int to = (end.millisecondsSinceEpoch / 1000).round();
