@@ -29158,7 +29158,7 @@ x=x.e
 this.fr=x
 this.dy.appendChild(x)
 this.n(this.fr)
-x=new B.hd("https://cors-anywhere.herokuapp.com/https://www.reddit.com")
+x=new B.hd("https://www.reddit.com")
 this.fy=x
 x=new G.bJ(x,[],"","100",!1,"8",!1)
 this.go=x
@@ -30210,7 +30210,7 @@ j:function(){var z,y,x
 z=U.uB(this,0)
 this.r=z
 this.e=z.e
-y=new B.hd("https://cors-anywhere.herokuapp.com/https://www.reddit.com")
+y=new B.hd("https://www.reddit.com")
 this.x=y
 y=new G.bJ(y,[],"","100",!1,"8",!1)
 this.y=y
@@ -30278,7 +30278,7 @@ V.B0()
 N.cb()
 $.$get$C().h(0,C.bP,new A.VR())},
 VR:{"^":"b:0;",
-$0:[function(){return new B.hd("https://cors-anywhere.herokuapp.com/https://www.reddit.com")},null,null,0,0,null,"call"]}}],["","",,F,{"^":"",Mc:{"^":"c;a,b,c,d,e,f,r",
+$0:[function(){return new B.hd("https://www.reddit.com")},null,null,0,0,null,"call"]}}],["","",,F,{"^":"",Mc:{"^":"c;a,b,c,d,e,f,r",
 CW:function(a,b,c,d){var z,y,x,w,v,u,t,s,r
 z=new Array(16)
 z.fixed$length=Array
